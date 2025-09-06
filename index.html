@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unique HTML Demo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      animation: glow 2s infinite alternate;
+    }
+
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .card p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px cyan;
+      }
+      to {
+        box-shadow: 0 0 30px cyan, 0 0 60px cyan;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Unique Card</h1>
+    <p>This is a glowing animated glass card built with pure HTML + CSS.</p>
+  </div>
+</body>
+</html>
